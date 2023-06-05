@@ -1,0 +1,1 @@
+This directory if for Python Hello world projects
