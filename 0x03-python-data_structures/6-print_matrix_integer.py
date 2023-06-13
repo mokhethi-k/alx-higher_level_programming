@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    r = len(matrix)
-    c = len(matrix[0])
-    if r == 0:
-        return
-
-    for i in range(r):
-        for j in range(c):
-            print("{:d}".format(matrix[i][j]), end=" ")
+    for r in matrix:
+        for c in r:
+            print("{:d}".format(c), end=" " if c != r[-1] else "")
         print()
